@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Mamifero_1 = require("./classes/Mamifero");
+const Ave_1 = require("./classes/Ave");
+const Reptil_1 = require("./classes/Reptil");
+const Inventario_1 = require("./managers/Inventario");
+const inventario = new Inventario_1.Inventario();
+const leao = new Mamifero_1.Mamifero("Leão", 5);
+const arara = new Ave_1.Ave("Arara Azul", 2);
+const cobra = new Reptil_1.Reptil("Cobra Coral", 4);
+inventario.adicionar(leao);
+inventario.adicionar(arara);
+inventario.adicionar(cobra);
+inventario.listar();
+inventario.interagirTodos();

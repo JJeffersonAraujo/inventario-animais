@@ -1,0 +1,13 @@
+import { Mamifero } from "./classes/Mamifero";
+import { Ave } from "./classes/Ave";
+import { Reptil } from "./classes/Reptil";
+import { Inventario } from "./managers/Inventario";
+const inventario = new Inventario();
+const leao = new Mamifero("Leão", 5);
+const arara = new Ave("Arara Azul", 2);
+const cobra = new Reptil("Cobra Coral", 4);
+inventario.adicionar(leao);
+inventario.adicionar(arara);
+inventario.adicionar(cobra);
+inventario.listar();
+inventario.interagirTodos();
