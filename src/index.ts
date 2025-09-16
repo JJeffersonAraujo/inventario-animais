@@ -11,3 +11,9 @@ inventario.adicionar(arara);
 inventario.adicionar(cobra);
 inventario.listar();
 inventario.interagirTodos();
+
+inventario.contarPorTipo();
+inventario.removerPorNome("Cobra Coral");
+inventario.listar();
+
+
